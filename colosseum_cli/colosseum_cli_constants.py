@@ -1,8 +1,8 @@
 """
 Competitor CLI Constants
 """
-CLI_APP_VERION = '18.05.0'
-CLI_MSG_VERSION = '2.0'
+CLI_APP_VERION = '19.0.0'
+CLI_MSG_VERSION = '3.0'
 
 SOCKET_PATH = '/socket/clisocket'
 TEST_SOCKET_PATH = '/tmp/socket/'
@@ -58,3 +58,8 @@ CLI_RET_CODE_ERROR = 400
 
 #Scenario Website
 WIKI_SCENARIO_LIST = 'http://sc2colosseum.pbworks.com/w/page/Scenarios'
+
+#USRP Flashing
+CLI_CMD_USRP_INFO = "usrp_info"
+CLI_CMD_USRP_FLASH = "usrp_flash"
+USRP_FLASH_FILEPATH_KEY = 'filename'

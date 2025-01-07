@@ -1,32 +1,23 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 PROJECT = 'colosseumcli'
-
-# Change docs/sphinx/conf.py too!
-VERSION = '18.05.0'
+VERSION = '19.0.0'
 
 from setuptools import setup, find_packages
-
-try:
-    long_description = open('README.rst', 'rt').read()
-except IOError:
-    long_description = ''
 
 setup(
     name=PROJECT,
     version=VERSION,
 
-    description='Cliff app for the colosseum',
-    long_description=long_description,
+    description='Control Colosseum components from reservation containers',
+    long_description='',
 
     author='Alex White',
     author_email='alex.white@jhuapl.edu',
 
-    url='https://github.com/openstack/cliff',
-    download_url='https://github.com/openstack/cliff/tarball/master',
+    url='https://github.com/colosseum-wiot/colosseumcli',
 
     classifiers=['Development Status :: 3 - Alpha',
-                 'License :: OSI Approved :: Apache Software License',
                  'Programming Language :: Python',
                  'Programming Language :: Python :: 3',
                  'Programming Language :: Python :: 3.2',
@@ -66,7 +57,9 @@ setup(
             'tg_info = colosseum_cli.tgen:tgen_info',
             'tg_nodemap = colosseum_cli.tgen:tgen_nodemap',
             'tg_scenario_list = colosseum_cli.tgen:tgen_scenario_list',
-        ],
+            'usrp_info = colosseum_cli.usrp:usrp_info',
+            'usrp_flash = colosseum_cli.usrp:usrp_flash',    
+    ],
     },
 
     zip_safe=False,
