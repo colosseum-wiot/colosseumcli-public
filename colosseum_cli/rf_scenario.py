@@ -10,7 +10,7 @@ from cliff.lister import Lister
 
 
 class rf_scenario_start(Command):
-    "Starts specified M-CHEM scenario as soon as possible"
+    "Start specified MCHEM scenario as soon as possible"
 
     log = logging.getLogger(__name__)
 
@@ -99,7 +99,7 @@ class rf_scenario_start(Command):
 
 
 class rf_scenario_stop(Command):
-    "Stop the active  M-CHEM scenario"
+    "Stop the active MCHEM scenario"
 
     log = logging.getLogger(__name__)
 
@@ -125,7 +125,7 @@ class rf_scenario_stop(Command):
 
 
 class rf_scenario_info(ShowOne):
-    "Information on the active M-CHEM scenario."
+    "Information on the active MCHEM scenario."
 
     log = logging.getLogger(__name__)
 
@@ -168,7 +168,7 @@ class rf_scenario_info(ShowOne):
         return(rows, values)
 
 class rf_scenario_radio_map(Lister):
-    "Returns the current Radio Map."
+    "Return the current Radio Map."
 
     log = logging.getLogger(__name__)
 
@@ -210,7 +210,7 @@ class rf_scenario_radio_map(Lister):
 
 
 class rf_scenario_list(Lister):
-    "List available M-CHEM scenario."
+    "List available MCHEM scenarios."
 
     log = logging.getLogger(__name__)
 
@@ -305,7 +305,7 @@ class rf_scenario_list_nodes(Lister):
 
 def check_radio_map(user_radio_map):
     """
-    Converts the user radio map to the M-CHEM
+    Converts the user radio map to the MCHEM
     :param user_radio_map:
     :return:
     """

@@ -10,7 +10,7 @@ from cliff.lister import Lister
 
 
 class usrp_info(Command):
-    "Starts specified M-CHEM scenario as soon as possible"
+    "Information on the USRP device"
 
     log = logging.getLogger(__name__)
 
@@ -39,7 +39,7 @@ class usrp_info(Command):
 
 
 class usrp_flash(Command):
-    "Starts specified M-CHEM scenario as soon as possible"
+    "Flash the USRP with a new UHD bitfile"
 
     log = logging.getLogger(__name__)
 

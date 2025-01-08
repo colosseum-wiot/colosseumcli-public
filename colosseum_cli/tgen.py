@@ -9,7 +9,7 @@ from cliff.show import ShowOne
 from cliff.lister import Lister
 
 class tgen_start(Command):
-    "Starts specified traffic scenario as soon as possible"
+    "Start specified traffic scenario as soon as possible"
 
     log = logging.getLogger(__name__)
 
@@ -60,7 +60,7 @@ class tgen_start(Command):
         self.log.debug('completed traffic scenario start')
 
 class tgen_stop(Command):
-    "Stops active traffic scenario"
+    "Stop active traffic scenario"
 
     log = logging.getLogger(__name__)
 
